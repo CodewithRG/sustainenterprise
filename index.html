@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Repier Center</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+    <!-- Javascript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- mycode js -->
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/script.js" defer></script>
+    <link rel="stylesheet" href="CSS/style.css">
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Navbar Here -->
+    <nav class=" bg-style ">
+        <div class="container-fluid bg-pink-right border-bottom border-gray box-shadow sticky-top">
+            <div class="container p-2">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-6 col-sm-6">
+                        <img src="image/icons8-phone.svg" alt="phone" class="icon">
+                        <span class="icon-text "> +918750289197</span>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 col-sm-6 text-right">
+                        <img src="image/icons8-mail.svg" alt="Gmail" class="icon">
+                        <span class="icon-text">softec@gmail.com</span>
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-sm-4 d-none d-md-block text-right">
+                        <img src="image/icons8-location-64.png" alt="Location" class="icon">
+                        <span class="icon-text"> Commercial belt,greater noida 201310 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Manu Bar -->
+
+        <div class="container p-2 bg-bisque bg-bisque box-shadow" id="none-show">
+            <div class="row ">
+                <div class="col-lg-2 col-md-1 col-sm-4 col-4 ">
+                    <a href="index.html">   <img src="image/L1.png" alt="" style="width: 135px; padding: 5px;"></a>
+                </div>
+
+
+                <div class="col-lg-3  p-0 mt-4 col-sm-6 col-8 text-right  search-items d-none d-lg-block ">
+                    <form action="Repair.html">
+                        <select name="cars" id="Search" class="form-control d-inline text-center size-md ">
+                            <option value="volvo">Search...</option>
+                            <option value="">APPLE</option>
+                            <option value="saab">VIVO</option>
+                            <option value="opel">OPPO</option>
+                            <option value="audi">REALME</option>
+                        </select>
+                        <input type="submit" value="Find"
+                            style="height: 32px; padding: 0px 8px; border-radius: 6px; background-color: #00d2ff; color: white;">
+                    </form>
+                </div>
+
+                <span class="col-sm-7 col-7 text-right mt-3  blok menu">
+                    <span> <img src="image/menu-icon.png" alt="menu" style="width: 30px;" id="menu-ic"></span>
+                </span>
+
+
+                <div class="col-lg-7 col-md-11 mt-4 text-center pr-3 d-none d-md-block">
+
+                    <span class="btn hnv mr-2" style="color: white; background-color: #00d2ff;">HOME</span>
+                    <a href="aboutUs.html"> <span class="btn hnv  mr-2">ABOUT</span></a>
+                    <a href="Repair.html"><span class="btn hnv mr-2">REPAIR</span></a>
+                    <a href="https://showroom.dotpe.in/sustainenterprise"> <span
+                            class="btn hnv mr-2">ACCESORIES</span></a>
+                    <span class="btn hnv  mr-2 " data-toggle="modal" data-target="#myModal">ENQUIRY</span>
+                    <a href="contectUs.html"><span class="btn hnv ">CONTACT</span></a>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- menu when we click on icon -->
+    <div class="main sticky-top" id="menu-slide">
+        <a href="index.html">
+            <div class="main-child hov">HOME</div><br>
+        </a>
+        <a href="aboutUs.html">
+            <div class="main-child hov">ABOUT</div><br>
+        </a>
+        <a href="Repair.html">
+            <div class="main-child hov">REPAIR</div><br>
+        </a>
+        <a href="https://showroom.dotpe.in/sustainenterprise">
+            <div class="main-child hov">ACCESORIES</div><br>
+        </a>
+        <div style="color: rgb(53, 53, 53);" class="main-child hov" data-toggle="modal" data-target="#myModal">ENQUIRY
+        </div><br>
+        <a href="contectUs.html">
+            <div class="main-child hov">CONTACT</div><br>
+        </a>
+    </div>
+
+    <script>
+        // slide menu
+        $("#menu-ic").click(function () {
+            $("#menu-slide").slideToggle(100);
+        });
+
+    </script>
+
+
+
+    <!-- slider -->
+    <div class="container mt-3 p-0">
+        <img src="image/s1.jpg" alt="" class=" chng" height="400vh">
+        <img src="image/s2.png" alt="" class=" chng" height="400vh">
+        <img src="image/s3.jpg" alt="" class=" chng" height="400vh">
+    </div>
+
+
+    <!-- Repair brands -->
+    <div class="container text-center mt-5 bg-pink1 p-3 bg-style">
+        <Span class="top-heading">REPAIR BRANDS</Span>
+        <div class="row p-3 ">
+            <div class="col-md-3 col-sm-6 col-6  ">
+                <div class="bg-white pt-3 pb-3 mb-3 style">
+                    <img src="image/apple.jpg" alt="apple" class="repair-img">
+                    <div>APPLE</div>
+                    <a href="Repair.html">
+                        <div class="btn hnv m-2 bg-book">BOOK NOW</div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-6 mb-3">
+                <div class="bg-white pt-3 pb-3 mb-3 style">
+                    <img src="image/vivo.jpeg" alt="vivo" class="repair-img">
+                    <div>VIVO</div>
+                    <a href="Repair.html">
+                        <div class="btn hnv m-2 bg-book">BOOK NOW</div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-6">
+                <div class="bg-white pt-3 pb-3 mb-3 style">
+                    <img src="image/samsung.jpg" alt="SAMSUMG" class="repair-img">
+                    <div>SAMSUMG</div>
+                    <a href="Repair.html">
+                        <div class="btn hnv m-2 bg-book">BOOK NOW</div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-6">
+                <div class="bg-white pt-3 pb-3 mb-3 style">
+                    <img src="image/oppo.jpeg" alt="oppo" class="repair-img">
+                    <div>OPPO</div>
+                    <a href="Repair.html">
+                        <div class="btn hnv m-2 bg-book">BOOK NOW</div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center margin bg-pink2 bg-style ">
+        <div class="row p-3 ">
+            <div class="col-md-3 col-sm-6 col-6  ">
+                <div class="bg-white pt-3 pb-3 mb-3 style">
+                    <img src="image/one-plus.png" alt="1+" class="repair-img">
+                    <div>ONE PLUS </div>
+                    <a href="Repair.html">
+                        <div class="btn hnv m-2 bg-book">BOOK NOW</div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-6 mb-3">
+                <div class="bg-white pt-3 pb-3 mb-3 style">
+                    <img src="image/mi.png" alt="mi" class="repair-img">
+                    <div>XIAOMI MI</div>
+                    <a href="Repair.html">
+                        <div class="btn hnv m-2 bg-book">BOOK NOW</div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-6">
+                <div class="bg-white pt-3 pb-3 mb-3 style">
+                    <img src="image/infinix.png" alt="infinix" class="repair-img">
+                    <div>INFINIX</div>
+                    <a href="Repair.html">
+                        <div class="btn hnv m-2 bg-book">BOOK NOW</div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-6">
+                <div class="bg-white pt-3 pb-3 mb-3 style">
+                    <img src="image/tecno.png" alt="tecno" class="repair-img">
+                    <div>TECNO</div>
+                    <a href="Repair.html">
+                        <div class="btn hnv m-2 bg-book">BOOK NOW</div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- mobile ACCESORIES -->
+
+
+
+    <div class="container text-center mt-5 p-3 bg-pink1 bg-style">
+        <Span class="top-heading">MOBILE ACCESORIES</Span>
+        <div class="row p-3 ">
+            <div class="col-md-3 col-sm-6 col-6 mt-3">
+                <div class="bg-white style w-100  h-100 ">
+                    <img src="image/USB.jpg" alt="apple" class="repair-img ">
+                    <div class="pt-2">USB CABLE</div>
+                    <div class="btn hnv m-2 bg-book" data-toggle="modal" data-target="#myModal">BUY NOW
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3  col-sm-6 col-6 mt-3">
+                <div class=" pt-3 bg-white  style w-100  h-100">
+                    <img src="image/charger.png" alt="vivo" class="repair-img">
+                    <div>FAST CHARGER</div>
+                    <div class="btn  m-2 bg-book hnv " data-toggle="modal" data-target="#myModal">BUY NOW
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-6 mt-3">
+                <div class="bg-white style w-100  h-100 ">
+                    <img src="image/backcover1.jpg" alt="SAMSUMG" class="repair-img pt-4">
+                    <div class="">ALL BACKCOVERS</div>
+                    <div class="btn  m-2 bg-book hnv " data-toggle="modal" data-target="#myModal">BUY NOW</div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-6 mt-3">
+                <div class="bg-white style w-100  h-100">
+                    <img src="image/Buy-Tripod.jpg" alt="oppo" class="repair-img pt-2">
+                    <div class="pt-2">TRIPODS</div>
+                    <div class="btn  m-2 bg-book hnv " data-toggle="modal" data-target="#myModal">BUY NOW</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center margin bg-pink2 pt-3 pb-4 bg-style">
+        <div class="row p-3 ">
+            <div class="col-md-3 col-sm-6 col-6  mt-3">
+                <div class="bg-white w-100 h-100 style">
+                    <img src="image/headphones.png" alt="1+" class="repair-img">
+                    <div class="">HEADPHONES</div>
+                    <div class="btn  m-2 bg-book hnv " data-toggle="modal" data-target="#myModal">BUY NOW</div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-6 mt-3">
+                <div class="bg-white w-100 h-100 style">
+                    <img src="image/screan-glass2.png" alt="mi" class="repair-img ">
+                    <div>SCREEN GLASS</div>
+                    <div class="btn  m-2 bg-book hnv " data-toggle="modal" data-target="#myModal">BUY NOW</div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-6 mt-3">
+                <div class="bg-white w-100 h-100 style">
+                    <img src="image/pawerbank.png" alt="infinix" class="repair-img pt-5">
+                    <div class="pt-4">POWER BANK</div>
+                    <div class="btn  m-2 bg-book hnv " data-toggle="modal" data-target="#myModal">BUY NOW</div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-6 mt-3">
+                <div class="bg-white w-100 h-100 style">
+                    <img src="image/battary.png" alt="tecno" class="repair-img pt-2">
+                    <div class="pt-2"> PHONES BATTARY</div>
+                    <div class="btn  m-2 bg-book hnv " data-toggle="modal" data-target="#myModal">BUY
+                        NOW</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Trigger the modal with a button -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content position">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <h4 class="text-center font-color font-size">QUICK QUERY</h4>
+
+                <div class="modal-body">
+                    <form action="">
+                        <input type="text" placeholder="Your Name" class="input-sty form-control"> <br></dir>
+                        <input type="number" placeholder="Mobile Number" class="input-sty  form-control"><br>
+                        <input type="number" placeholder="Pin Code" class="input-sty  form-control"><br>
+                        <textarea name="" id="" cols="35" rows="4" placeholder="ADDRESS"
+                            class="input-sty form-control"></textarea>
+                    </form>
+                </div>
+
+                <div class="modal-footer mr-5">
+                    <button type="button" class="btn btn-default bg-warning"  data-dismiss="modal" data-toggle="modal"
+                        data-target="#Otp"> continue </button>
+
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--OTP Modal -->
+    <div class="modal fade" id="Otp" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content position">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body text-left">
+                    <H6 style="font-weight: 600; color: tomato;">Enter OTP Code </H6>
+                    <input type="number" placeholder="123-456" class="form-control">
+                </div>
+
+                <div class="modal-footer mr-5">
+                    <button type="button" class="btn btn-default bg-success" data-dismiss="modal" data-toggle="modal"
+                    data-target="#myModalthank"> OK </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+     <!--thankyou Modal -->
+     <div class="modal fade" id="myModalthank" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body text-center">
+                   <H4 style="font-weight: 600; color: rgb(2, 102, 19);" >THANK-YOU FOR PURCHASED</H4>
+                   <P class="text-warning"> Deliver Your Items Soon</P>
+                </div>
+
+                <div class="modal-footer mr-5">
+                    <button type="button" class="btn btn-default bg-success" data-dismiss="modal"> OK </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container mt-5  bg-footer bg-style box-shadow">
+        <div class="row pl-2 pr-2 pt-4 pb-3">
+            <div class="col-md-4 text-center p-3">
+                <img src="image/L1.png" alt="" style="width: 150px;">
+                <p class="p-4 font-2"><B>SUSTAIN ENTERPRISE </B> is made in 2016,We are deals in Mobiles, Mobiles
+                    accessories,
+                    and Mobile repairing. Repair your phone at door steps with <b><b> 100% </b></b> customer
+                    satisfaction and 100% faster than Others.
+                    We are using geniune mobiles Spare parts.
+                </p>
+            </div>
+            <div class="col-md-8 mt-sm-3 pt-4">
+                <div class="row pl-3">
+                    <div class="col-md-4 col-sm-4 col-12 mt-3">
+                        <p class=" font-head ">SERVICES</p>
+                        <a href="Repair.html">
+                            <li class="font-child">Mobile Repairs</li>
+                        </a>
+                        <a href="https://showroom.dotpe.in/sustainenterprise">
+                            <li class="font-child">Mobiles Accessories</li>
+                        </a>
+                        <a href="Repair.html">
+                            <li class="font-child">Mobile Related Solutions</li>
+                        </a>
+                        <li class="font-child">Mobile Sellings</li>
+                        <li class="font-child">Second Hand Mobile</li>
+                        <li class="font-child">Quick and fast Services</li>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-12 mt-3 text-">
+                        <p class="font-head">QUICK LINKS</p>
+
+                        <a href="index.html">
+                            <li class="font-child">HOME</li>
+                        </a>
+                        <a href="aboutUs.html">
+                            <li class="font-child">ABOUT US</li>
+                        </a>
+                        <a href="Repair.html">
+                            <li class="font-child">REPAIR</li>
+                        </a>
+                        <a href="https://showroom.dotpe.in/sustainenterprise">
+                            <li class="font-child">ACCESORIES</li>
+                        </a>
+                        <LI class="font-child" data-toggle="modal" data-target="#myModal">ENQUAIRY</LI>
+                        <a href="contectUs.html">
+                            <LI class="font-child">CONTECT US </LI>
+                        </a>
+
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-12 mt-3 ">
+                        <p class="con-supp font-head ">CONTECT & SUPPORT</p>
+                        <p class="font-2"><B>SUSTAIN ENTERPRISE </B> is made in 2016,We are deals in Mobiles, Mobiles
+                            accessories,
+                            and Mobile repairing. <br>
+                            <b> Email :</b> MRepair@gmail.com <br>
+                            <b> Phone : </b> 8750289197 <br>
+                            <a href="contectUs.html"> <img src="image/social-media.webp" alt=""
+                                    style="width: 140px; margin-top: -16px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-pink-right mt-1 bg-style box-shadow">
+        <div class="row">
+            <div class="col-md-12 text-center p-3 font-2 ">
+                Copyright © Sustain Enterprise. All rights Reserved. Design & Developed by
+                <a href="http://softecitsolutions.com/" class="text-dark">Softec IT Solutions</a> (Ravi Gupta)
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
